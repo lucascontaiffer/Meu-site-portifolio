@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --cor-primeira: #000000;
+    --cor-segunda: #ffffff;
+    --cor-terceira: #F2AE30;
+    --cor-quarta: #565657;
+    --cor-fundo: #024959; 
+
+    --fonte-primeira: 'Montserrat', sans-serif;
+    --fonte-segunda: 'roboto', sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /*deixa os items de baixo para cima*/
+}
+
+h1 {
+    font-family: var(--fonte-segunda);
+    font-weight: lighter;
+}
+
+.botao__home__sobremim {
+    color: var(--cor-segunda);
+    background-color: var(--cor-terceira);
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.botao__home__sobremim a {
+    font-family: var(--fonte-primeira);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    color: #202022;
+    padding: 0px 20px 0px 20px;
+    border-radius: 3px;
+    margin: 0px 20px;
+}
+
+.conteudo-principal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--cor-segunda);
+    flex-grow: 1;  /* deixa o footer no lugar */
+    margin: 10%;
+}
+
+
+.botao__links a {
+    text-decoration: none;
+    border: 1px solid var(--cor-terceira);
+    border-radius: 5px;
+    padding: 15px 30px;
+    margin-left: 20px;
+    color: var(--cor-segunda);
+    font-family: var(--fonte-primeira);
+}
+
+.botao__links a:hover {
+    background-color: var(--cor-quarta);
+}
+
+footer {
+    font-family: var(--fonte-primeira);
+    text-align: center;
+    background-color: var(--cor-terceira);
+    width: 100%;
+    padding: 20px 0px;
+}
+
+/*XD*/
