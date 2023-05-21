@@ -58,13 +58,17 @@ h1 {
     margin: 10%;
 }
 
+.botao__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
 .botao__links a {
     text-decoration: none;
     border: 1px solid var(--cor-terceira);
     border-radius: 5px;
     padding: 15px 30px;
-    margin-left: 20px;
     color: var(--cor-segunda);
     font-family: var(--fonte-primeira);
 }
