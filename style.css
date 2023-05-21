@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 *{
     padding: 0;
     margin: 0;
 }
-
 :root{
     --cor-primeira: #000000;
     --cor-segunda: #ffffff;
@@ -17,19 +14,16 @@
     --fonte-primeira: 'Montserrat', sans-serif;
     --fonte-segunda: 'roboto', sans-serif;
 }
-
 body {
     background-color: var(--cor-fundo);
     height: 100vh;
     display: flex;
     flex-direction: column; /*deixa os items de baixo para cima*/
 }
-
 h1 {
     font-family: var(--fonte-segunda);
     font-weight: lighter;
 }
-
 .botao__home__sobremim {
     color: var(--cor-segunda);
     background-color: var(--cor-terceira);
@@ -37,7 +31,6 @@ h1 {
     display: flex;
     align-items: center;
 }
-
 .botao__home__sobremim a {
     font-family: var(--fonte-primeira);
     font-weight: bold;
@@ -48,7 +41,6 @@ h1 {
     border-radius: 3px;
     margin: 0px 20px;
 }
-
 .conteudo-principal {
     display: flex;
     align-items: center;
@@ -57,13 +49,11 @@ h1 {
     flex-grow: 1;  /* deixa o footer no lugar */
     margin: 10%;
 }
-
 .botao__links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-
 .botao__links a {
     text-decoration: none;
     border: 1px solid var(--cor-terceira);
@@ -72,11 +62,9 @@ h1 {
     color: var(--cor-segunda);
     font-family: var(--fonte-primeira);
 }
-
 .botao__links a:hover {
     background-color: var(--cor-quarta);
 }
-
 footer {
     font-family: var(--fonte-primeira);
     text-align: center;
@@ -84,5 +72,4 @@ footer {
     width: 100%;
     padding: 20px 0px;
 }
-
 /*XD*/
