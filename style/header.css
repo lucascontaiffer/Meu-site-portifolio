@@ -1,0 +1,106 @@
+.container-small{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.cabeçalho_menu-hamburguer{
+    width: 30px;
+    margin: 10px;
+    background-image: url("../img/Menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block; /*Permite mexer na altura e largura*/
+    cursor: pointer; 
+}
+.container_imagem{
+    padding: 1em;
+}
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 54px; 
+    width: 50vw;
+    background-color: white;
+}
+.container_botao{
+    display: none;
+}
+.container_botao:checked~.lista-menu{
+    display: block;
+}
+.lista-menu_titulo,
+.lista-menu_item{
+    padding: 1em;
+    background-color: var(--cor-branco);
+}
+
+.container_botao:checked~.container_rotulo>.cabeçalho_menu-hamburguer{
+    background-image: url("../img/Menu-Aberto.png");
+}
+.container_botao:checked~.container_rotulo{
+    background: var(--cor-terceira);
+}
+.lista-menu_item:hover{
+    background: var(--cor-terceira);
+}
+.lista-menu_titulo{
+    color: var(--cor-terceira);
+    font-family: var(--fonte-segunda);
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.lista-menu_link{
+    font-family: var(--fonte-segunda);
+    font-size: 1.1em;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase; /*letras maiusculas*/
+}
+.container_botao{
+    display: none;
+}
+.container-big{
+    display: none;
+}
+@media (min-width: 834px){
+    .container-small{
+        display: none;
+    }
+    .container-big{
+        display: flex;
+        background-color: var(--cor-terceira);
+        width: 100%;
+    }
+    .lista-menu-big{
+        display: flex;
+    }
+    .lista-menu_item-big{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .lista-menu_titulo-big,
+    .lista-menu_item-big{
+        padding: .6em;
+        font-size: 1.5em;
+        text-decoration: none;
+        font-family: var(--fonte-segunda);
+    }
+    .lista-menu_link-big{
+        color: black;
+        text-decoration: none;
+    }
+    .lista-menu_item-big:hover{
+        transform: scale(1.05);
+        z-index: 2;
+        transition: .5s;
+        background-color: var(--cor-terceira);
+    }
+}
+@media screen and (min-width: 1440px){
+    
+}     
